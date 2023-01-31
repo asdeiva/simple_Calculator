@@ -9,7 +9,8 @@
 </head>
 <body>
 <div class="container">
-    <div class="calculator">
+    
+    <div class="calculator" id="skin">
         <form>
             <div class="display">
                 <input type="text" name="display" id="display">
@@ -42,10 +43,26 @@
                 <input type="button" value="00" onclick="display.value += '00'">
                 <input type="button" value="0" onclick="display.value += '0'">
                 <input type="button" value="=" class="equal operator" onclick="display.value = eval(display.value)">
-                
             </div>
+            <!-- <div class="colors">
+                <input type="button"
+                onclick="document.getElementById('skin').style.background = 'black'" value="Black">
+
+                <input type="button"
+                onclick="document.getElementById('skin').style.background = '#0551745e'">
+                
+                <input type="button"
+                onclick="document.getElementById('skin').style.background = '#0551745e'">
+ 
+                <input type="button"
+                onclick="document.getElementById('skin').style.background = '#0551745e'">
+         
+            </div> -->
         </form>
     </div>
 </div>
+
+
+
 </body>
 </html>
